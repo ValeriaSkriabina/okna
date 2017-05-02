@@ -1,0 +1,402 @@
+/*
+  ========================================
+Сбрасываем стили
+http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+  ========================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+  =======================================
+  Подключаем шрифты
+  =======================================
+*/
+@font-face {
+    font-family: 'HelveticaNeueCyrBold';
+    src: url('fonts/HelveticaNeueCyrBold.eot');
+    src: url('fonts/HelveticaNeueCyrBold.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrBold.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrBold.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrBold.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrBold.svg#HelveticaNeueCyrBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueCyrLight';
+    src: url('fonts/HelveticaNeueCyrLight.eot');
+    src: url('fonts/HelveticaNeueCyrLight.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrLight.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrLight.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrLight.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrLight.svg#HelveticaNeueCyrLight') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueCyrMedium';
+    src: url('fonts/HelveticaNeueCyrMedium.eot');
+    src: url('fonts/HelveticaNeueCyrMedium.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrMedium.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrMedium.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrMedium.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrMedium.svg#HelveticaNeueCyrMedium') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueCyrRoman';
+    src: url('fonts/HelveticaNeueCyrRoman.eot');
+    src: url('fonts/HelveticaNeueCyrRoman.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyrRoman.woff2') format('woff2'),
+    url('fonts/HelveticaNeueCyrRoman.woff') format('woff'),
+    url('fonts/HelveticaNeueCyrRoman.ttf') format('truetype'),
+    url('fonts/HelveticaNeueCyrRoman.svg#HelveticaNeueCyrRoman') format('svg');
+}
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+body {
+    background: #e1f0f8;
+    color: #484848;
+    font-size: 14px;
+    font-family: HelveticaNeueCyrRoman, sans-serif;
+}
+
+/*
+  ========================================
+  Ссылки
+  ========================================
+*/
+
+a:hover {
+    color: #eb5825;
+    text-decoration: underline;
+}
+a {
+    color: #648880;
+    text-decoration: none;
+    font-size: 23px;
+}
+/*
+  ==========================================
+  Типографика
+  ==========================================
+ */
+h2, h3, h4 {
+    color: #484848;
+}
+h1 {
+    font-size: 64px;
+    color: #4b4b4b;
+    margin: 60px 0 15px 0;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+h5 {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+cite, em {
+    font-style: italic;
+}
+
+/*
+==============================================
+button
+==============================================
+ */
+.button {
+    background-color: #eb5825;
+    width: 311px;
+    height: 43px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top:35px;
+}
+.button:hover {
+    background: linear-gradient(to top, #c44114, #eb5825);
+    cursor: pointer;
+}
+
+/*
+  ============================================
+  header
+  ============================================
+ */
+header {
+    background-color: white;
+    max-height: 160px;
+    margin-bottom: 100px;
+}
+.count-price {
+    color: #f36240;
+    text-decoration: underline;
+}
+.count {
+   padding: 92px 0 0 145px;
+}
+.count-price:hover {
+    color: #648880;
+}
+.contact p, .contact a {
+    color: #484745;
+    line-height: 1.3em;
+}
+.logo {
+    padding: 15px 25px 0 25px;
+}
+.contact {
+    text-align: right;
+   padding-right: 25px;
+    padding-top: 72px;
+}
+/*
+  ==========================================
+  Навигация
+  ==========================================
+ */
+.navigation {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation li {
+    border-right: 1px solid #5f6973;
+    flex-grow: 1;
+    text-align: center;
+}
+.navigation li:last-child {
+    border-right: none;
+}
+.navigation li a {
+    display: block;
+    padding: 15px 20px;
+
+}
+.navigation li a:hover {
+    background: #7bc3d5;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*
+================================================
+sidebar
+================================================
+ */
+.sidebar {
+    background-color: #ffffff;
+    max-height:470px;
+    max-width: 240px;
+    padding: 25px 25px 30px 25px;
+    border-radius: 5px;
+    margin-right: 42px;
+}
+.sideleft a{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+/*
+================================================
+main
+================================================
+ */
+main>h2 {
+    margin-bottom: 35px;
+}
+.main {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 35px;
+}
+.main>h2 {
+    margin-bottom: 30px;
+}
+.laminate {
+
+}
+
+/*
+=================================================
+checkbox
+=================================================
+ */
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:60px;
+    height:60px;
+    margin:-1px 4px 0 0;
+    /*vertical-align:middle;*/
+    background:url(img/color2.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(img/color2cheked.png) no-repeat;
+}
+input[id="c1"] + label span {
+    background:url(img/color5.png) left top no-repeat;
+}
+input[id="c1"]:checked + label span {
+    background:url(img/color5cheked.png) no-repeat;
+}
+input[id="c2"] + label span {
+    background:url(img/color2.png) left top no-repeat;
+}
+input[id="c2"]:checked + label span {
+    background:url(img/color2cheked.png) no-repeat;
+}
+input[id="c3"] + label span {
+    background:url(img/color3.png) left top no-repeat;
+}
+input[id="c3"]:checked + label span {
+    background:url(img/color3checked.png) no-repeat;
+}
+input[id="c4"] + label span {
+    background:url(img/color4.png) left top no-repeat;
+}
+input[id="c4"]:checked + label span {
+    background:url(img/color4checked.png) no-repeat;
+}
+input[id="c5"] + label span {
+    background:url(img/color5.png) left top no-repeat;
+}
+input[id="c5"]:checked + label span {
+    background:url(img/color5cheked.png) no-repeat;
+}
+input[id="c6"] + label span {
+    background:url(img/color6.png) left top no-repeat;
+}
+input[id="c6"]:checked + label span {
+    background:url(img/color6cheked.png) no-repeat;
+}
+input[id="c7"] + label span {
+    background:url(img/color7.png) left top no-repeat;
+}
+input[id="c7"]:checked + label span {
+    background:url(img/color7cheked.png) no-repeat;
+}
+/*
+=================================================
+footer
+=================================================
+ */
+footer {
+    background-color: #a5b7c1;
+    height: 230px;
+
+}
+footer::before {
+    background: #ffffff;
+    background: linear-gradient(to top, #a5b7c1 0%, #88949b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#999999', GradientType=1);
+    content: "";
+    display: block;
+    height: 15px;
+    width: 100%;
+}
+.nav-footer  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #6e7b83;
+}
+.nav-footer li {
+    border-right: 1px solid #5f6973;
+    flex-grow: 1;
+    text-align: center;
+}
+.nav-footer li:last-child {
+    border-right: none;
+}
+.nav-footer li a {
+    display: block;
+    padding: 15px 20px;
+
+}
+.nav-footer li a:hover {
+    background: linear-gradient(to top, #a5b7c1, #bfd4e0);
+    color: #ffffff;
+    text-decoration: none;
+}
+.contact-footer {
+    color: #000;
+    font-family: HelveticaNeueCyrBold;
+    position: relative;
+    top: 40px;
+    left: 60px;
+}
+.contact-footer .telephone {
+    font-family: HelveticaNeueCyrRoman;
+    font-size: 22px;
+    color: #000;
+}
+
+.contact-footer .mail {
+    font-family: HelveticaNeueCyrRoman;
+    font-size: 16px;
+    color: #eb5825;
+    text-decoration: underline;
+    line-height: 1.3em;
+}
+.contact-footer a:hover {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
